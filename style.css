@@ -64,8 +64,6 @@ nav.header-nav li {
     margin: auto 0.4rem;
     margin-top: 0.2rem;
     padding: 0.4rem 0.2rem;
-
-    background-color: aquamarine;
 }
 
 nav .custom-button {
@@ -94,7 +92,6 @@ article .home-picture {
 /* Main */
 /*first section*/
 section article.why-openlab{
-    background-color: pink;
     text-align: center;
 }
 
