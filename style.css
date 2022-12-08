@@ -8,12 +8,12 @@ html {
 }
 
 body {
-    font-family: sans-serif;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
     margin: 0;
 }
 
 h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 h2 {
@@ -43,9 +43,12 @@ figure {
 }
 
 /* Header */
+header .small-container {
+    margin: 0.4rem;
+}
+
 header .discord-group {
     background-color: rgba(152, 156, 162, 0.15);
-    padding: 0.4rem 0.2rem;
     border-radius: 5rem;
 }
 
@@ -68,27 +71,31 @@ nav.header-nav li {
 nav .custom-button {
     background-color: var(--color-blue);
     color: white;
-    padding: 0.5rem 1.5rem;
+    padding: 0.95rem 1.5rem;
     border: none;
     border-radius: 0.5rem;
 }
 
 header .home-container {
     background-color: var(--color-blue);
+    color: white;
+    justify-content: space-evenly;
 }
 
 article .home-article {
     margin: 0;
+    max-width: 25rem;
 }
 
 article .home-picture {
-    max-height: 60vh;
+    max-height: 25rem;
 }
 
 /* Main */
 /*first section*/
 section article.why-openlab{
     background-color: pink;
+    text-align: center;
 }
 
 main section article.some-reasons {
