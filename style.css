@@ -8,17 +8,23 @@ html {
 }
 
 body {
-    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-family: 'SF Pro Display', sans-serif;                                   
     margin: 0;
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    font-weight: 400;
 }
 
 h2 {
-    font-size: 0.75rem;
+    font-size: 1.2rem;
 } 
+
+p {
+    font-size: 1.08rem;
+    color: #566b8d;
+}
 
 a {
     text-decoration: none;
@@ -29,6 +35,7 @@ a {
 ul {
     display: flex;
     list-style: none;
+    font-weight: 500;
 }
 
 figure {
@@ -42,9 +49,15 @@ figure {
     align-items: center;
 }
 
+.container {
+    max-width: 1320px;
+}
+
 /* Header */
-header .small-container {
-    margin: 0.4rem;
+header .small-head {
+    margin: 0.4rem auto;
+    font-size: 0.85rem;
+    gap: 50px;
 }
 
 header .discord-group {
@@ -54,9 +67,10 @@ header .discord-group {
 
 header nav {    
     border-top: 1px solid var(--color-blue);
+    margin: auto;
 }
 
-nav ul a:hover {
+nav ul a:hover, a:active {
     color: var(--color-blue);
 }
 
@@ -72,6 +86,7 @@ nav .custom-button {
     padding: 0.95rem 1.5rem;
     border: none;
     border-radius: 0.5rem;
+    margin-left: auto;
 }
 
 header .home-container {
@@ -85,16 +100,62 @@ article .home-article {
     max-width: 25rem;
 }
 
+article .home-article p {
+    color: white;
+}
+
 article .home-picture {
     max-height: 25rem;
 }
 
 /* Main */
 /*first section*/
-section article.why-openlab{
+section.openlab-container {
+    margin: auto;
+}
+
+section article.why{
     text-align: center;
 }
 
-main section article.some-reasons {
-    background-color: orange;
+section article.reasons {
+    justify-content: space-around;
+}
+
+section.openlab-grid {
+    margin: auto;
+    justify-content: space-evenly;
+}
+
+section article.vision {
+    max-width: 40rem;
+}
+
+section article.numbers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+
+    font-size: 5rem;
+    font-weight: 600;
+}
+
+article.numbers .classes {
+    color: #5b94d7;
+    background-color: rgba(221, 236, 251, 0.4);
+    padding: 1rem 5rem;
+}
+
+article.numbers .student {
+    color: #5cc19a;
+    background-color: rgba(156, 238, 204, 0.4);
+}
+
+article.numbers .labmaster {
+    color: #dbca68;
+    background-color: rgba(238, 226, 156, 0.4);
+}
+article.numbers .school {
+    color: #b95e73;
+    background-color: rgba(238, 156, 156, 0.4);
 }
