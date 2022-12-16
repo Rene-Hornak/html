@@ -18,11 +18,15 @@ h1 {
 }
 
 h2 {
-    font-size: 1.2rem;
+    font-size: 2.4rem;
 } 
 
+h4 {
+    font-size: 1.25rem;
+}
+
 p {
-    font-size: 1.08rem;
+    font-size: 1rem;
     color: #566b8d;
     line-height: 1.5;
     letter-spacing: 1px;
@@ -37,6 +41,10 @@ a {
 ul {
     display: flex;
     list-style: none;
+}
+
+li {
+    font-size: 0.875rem;
     font-weight: 500;
 }
 
@@ -49,12 +57,17 @@ ul {
 
 .container {
     max-width: 1320px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.insidespace {
+    margin-top: 5rem;
 }
 
 /* Header */
 header .small-head {
-    margin: 0.4rem auto;
-    font-size: 0.85rem;
+    font-size: 0.813rem;
     gap: 50px;
 }
 
@@ -65,7 +78,6 @@ header .discord-group {
 
 header nav {    
     border-top: 1px solid #d7eaff;
-    margin: auto;
 }
 
 nav ul a:hover, a:active {
@@ -73,8 +85,6 @@ nav ul a:hover, a:active {
 }
 
 nav.header-nav li {
-    margin: auto 0.4rem;
-    margin-top: 0.2rem;
     padding: 0.4rem 0.2rem;
 }
 
@@ -93,12 +103,10 @@ header .home-container {
 }
 
 header .home {
-    margin: auto;
     justify-content: space-between;
 }
 
 article .home-article {
-    margin: 0;
     max-width: 25rem;
 }
 
@@ -110,30 +118,33 @@ article .home-picture {
     max-height: 25rem;
 }
 
-article .home-o {
+div article div.container-image {
+    width: 230px;
     position: absolute;
-    max-height: 32rem;
-    top: 260px;
-    left: 1510px;
+    right: 0;
+    top: 17rem;
+}
+
+article div img.home-o {
+    max-height: 30rem;
 }
 
 /* Main */
 /*first section*/
-section.openlab-container {
-    margin: auto;
-}
-
 section article.why{
     text-align: center;
     max-width: 80rem;
 }
 
 section article.reasons {
+    max-width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
     justify-content: space-around;
 }
 
+/*second section*/
 section.openlab-grid {
-    margin: auto;
     justify-content: space-evenly;
 }
 
@@ -153,7 +164,6 @@ section article.numbers {
 article.numbers .classes {
     color: #5b94d7;
     background-color: rgba(221, 236, 251, 0.4);
-    padding: 1rem 5rem;
 }
 
 article.numbers .student {
@@ -169,3 +179,5 @@ article.numbers .school {
     color: #b95e73;
     background-color: rgba(238, 156, 156, 0.4);
 }
+
+/*third sesction*/
