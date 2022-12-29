@@ -8,8 +8,12 @@ html {
 }
 
 body {
-    font-family: 'SF Pro Display', sans-serif;                                   
+    font-family: 'SF Pro Display', sans-serif;                                 
     margin: 0;
+}
+
+strong {
+    font-weight: 600;
 }
 
 h1 {
@@ -19,6 +23,7 @@ h1 {
 
 h2 {
     font-size: 2.4rem;
+    font-weight: 400;
 } 
 
 h4 {
@@ -45,7 +50,7 @@ ul {
 
 li {
     font-size: 0.875rem;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .display-flex {
@@ -65,22 +70,41 @@ li {
     margin-top: 5rem;
 }
 
+.textcorrect {
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
 /* Header */
+/* first part */
 header .small-head {
     font-size: 0.813rem;
     gap: 50px;
+    color: rgb(33, 37, 41);
+
+    padding: 8px;
+
+    border-bottom: 1px solid #d7eaff;
 }
 
-header .discord-group {
+header .small-head .discord-group a {
+    font-size: 0.75rem;
+    color: #989ca2;
     background-color: rgba(152, 156, 162, 0.15);
+    
+    padding: 6px 10px;
+    border: 1px solid rgba(152, 156, 162, 0.15);
     border-radius: 5rem;
 }
 
-header nav {    
-    border-top: 1px solid #d7eaff;
+header .small-head .discord-group a:hover,
+header .small-head .discord-group a:active {
+    color: black;
 }
 
-nav ul a:hover, a:active {
+/* second part */
+nav ul a:hover,
+nav ul a:active {
     color: var(--color-blue);
 }
 
@@ -97,6 +121,7 @@ nav .custom-button {
     margin-left: auto;
 }
 
+/* third part */
 header .home-container {
     background-color: var(--color-blue);
     color: white;
@@ -123,6 +148,7 @@ div article div.container-image {
     position: absolute;
     right: 0;
     top: 17rem;
+    overflow: hidden;
 }
 
 article div img.home-o {
@@ -141,6 +167,11 @@ section article.reasons {
     margin-right: auto;
     margin-left: auto;
     justify-content: space-around;
+}
+
+section article.reasons div p {
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 /*second section*/
