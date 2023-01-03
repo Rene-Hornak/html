@@ -1,5 +1,6 @@
 :root {
     --color-blue: #3597ff; 
+    --grey-blue:#566b8d;
 }
 
 /* General */
@@ -8,56 +9,47 @@ html {
 }
 
 body {
-    font-family: 'SF Pro Display', sans-serif;                                 
+    font-family: 'SF Pro Display', sans-serif;   
+    letter-spacing: 1px;                              
     margin: 0;
-}
-
-strong {
-    font-weight: 600;
 }
 
 h1 {
     font-size: 2.5rem;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 h2 {
     font-size: 2.4rem;
-    font-weight: 400;
+    font-weight: 300;
 } 
 
 h4 {
     font-size: 1.25rem;
 }
 
+strong {
+    font-weight: 700;
+}
+
 p {
     font-size: 1rem;
-    color: #566b8d;
+    color: var(--grey-blue);
     line-height: 1.5;
-    letter-spacing: 1px;
 }
 
 a {
     text-decoration: none;
-    color: black;
+    color: #000000;
     padding: 10px;
 }
 
 ul {
-    display: flex;
     list-style: none;
 }
 
 li {
-    font-size: 0.875rem;
-    font-weight: 400;
-}
-
-.display-flex {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    font-size: 14px;
 }
 
 .container {
@@ -66,21 +58,26 @@ li {
     margin-left: auto;
 }
 
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .insidespace {
     margin-top: 5rem;
 }
 
 .textcorrect {
     line-height: 1.5;
-    letter-spacing: 1px;
 }
 
 /* Header */
 /* first part */
 header .small-head {
-    font-size: 0.813rem;
+    font-size: 13px;
     gap: 50px;
-    color: rgb(33, 37, 41);
+    color: #212529;
 
     padding: 8px;
 
@@ -88,7 +85,7 @@ header .small-head {
 }
 
 header .small-head .discord-group a {
-    font-size: 0.75rem;
+    font-size: 12px;
     color: #989ca2;
     background-color: rgba(152, 156, 162, 0.15);
     
@@ -99,23 +96,31 @@ header .small-head .discord-group a {
 
 header .small-head .discord-group a:hover,
 header .small-head .discord-group a:active {
-    color: black;
+    color: #000000;
+}
+
+header .small-head .discord-group a img {
+    margin-left: 5px;
 }
 
 /* second part */
+nav.header-nav li {
+    padding: 0.4rem 0.2rem;
+}
+
 nav ul a:hover,
 nav ul a:active {
     color: var(--color-blue);
 }
 
-nav.header-nav li {
-    padding: 0.4rem 0.2rem;
-}
-
 nav .custom-button {
+    font-family: inherit;
+    font-size: 14px;
+
     background-color: var(--color-blue);
     color: white;
-    padding: 0.95rem 1.5rem;
+
+    padding: 12px 20px;
     border: none;
     border-radius: 0.5rem;
     margin-left: auto;
@@ -124,7 +129,7 @@ nav .custom-button {
 /* third part */
 header .home-container {
     background-color: var(--color-blue);
-    color: white;
+    color: #ffffff;
 }
 
 header .home {
@@ -132,11 +137,11 @@ header .home {
 }
 
 article .home-article {
-    max-width: 25rem;
+    max-width: 30rem;
 }
 
 article .home-article p {
-    color: white;
+    color: #ffffff;
 }
 
 article .home-picture {
@@ -159,19 +164,23 @@ article div img.home-o {
 /*first section*/
 section article.why{
     text-align: center;
-    max-width: 80rem;
+    max-width: 62rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 section article.reasons {
     max-width: 1000px;
     margin-right: auto;
     margin-left: auto;
-    justify-content: space-around;
 }
 
 section article.reasons div p {
-    margin-left: 10px;
-    margin-right: 10px;
+    font-size: 0.875rem;
+}
+
+section article.reasons div p {
+    margin-right: 20px;
 }
 
 /*second section*/
