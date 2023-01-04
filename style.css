@@ -1,6 +1,10 @@
 :root {
+    /*how color*/
     --color-blue: #3597ff; 
     --grey-blue:#566b8d;
+
+    /*how big*/
+    --top-bottom: 12px;
 }
 
 /* General */
@@ -26,6 +30,7 @@ h2 {
 
 h4 {
     font-size: 1.25rem;
+    margin: 0;
 }
 
 strong {
@@ -41,7 +46,7 @@ p {
 a {
     text-decoration: none;
     color: #000000;
-    padding: 10px;
+    padding: 15px 20px;
 }
 
 ul {
@@ -68,19 +73,14 @@ li {
     margin-top: 5rem;
 }
 
-.textcorrect {
-    line-height: 1.5;
-}
-
 /* Header */
 /* first part */
 header .small-head {
     font-size: 13px;
-    gap: 50px;
     color: #212529;
 
+    gap: 50px;  
     padding: 8px;
-
     border-bottom: 1px solid #d7eaff;
 }
 
@@ -104,10 +104,13 @@ header .small-head .discord-group a img {
 }
 
 /* second part */
-nav.header-nav li {
-    padding: 0.4rem 0.2rem;
+nav img.logo {
+    vertical-align: middle;
 }
-
+header nav {
+    margin-top: var(--top-bottom);
+    margin-bottom: var(--top-bottom);
+}
 nav ul a:hover,
 nav ul a:active {
     color: var(--color-blue);
@@ -115,12 +118,13 @@ nav ul a:active {
 
 nav .custom-button {
     font-family: inherit;
+    letter-spacing: inherit;
     font-size: 14px;
 
     background-color: var(--color-blue);
     color: white;
 
-    padding: 12px 20px;
+    padding: 15px 20px;
     border: none;
     border-radius: 0.5rem;
     margin-left: auto;
@@ -195,9 +199,9 @@ section article.vision {
 section article.numbers {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    gap: 20px;
 
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 600;
 }
 
@@ -220,4 +224,13 @@ article.numbers .school {
     background-color: rgba(238, 156, 156, 0.4);
 }
 
+article.numbers div.colorcontent {
+    text-align: end;
+    margin: 0;
+    padding: 30px 45px;
+    border-radius: 5px;
+}
 /*third sesction*/
+section div article figure img.schoolpicture{
+    max-width: 30rem;
+}
