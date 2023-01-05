@@ -46,7 +46,7 @@ p {
 a {
     text-decoration: none;
     color: #000000;
-    padding: 15px 20px;
+    padding: 15px 18px;
 }
 
 ul {
@@ -74,13 +74,13 @@ li {
 }
 
 /* Header */
-/* first part */
+/* Small header */
 header .small-head {
     font-size: 13px;
     color: #212529;
 
     gap: 50px;  
-    padding: 8px;
+    padding: 9.5px;
     border-bottom: 1px solid #d7eaff;
 }
 
@@ -103,7 +103,7 @@ header .small-head .discord-group a img {
     margin-left: 5px;
 }
 
-/* second part */
+/* Navigation */
 nav img.logo {
     vertical-align: middle;
 }
@@ -116,7 +116,7 @@ nav ul a:active {
     color: var(--color-blue);
 }
 
-nav .custom-button {
+nav .btn {
     font-family: inherit;
     letter-spacing: inherit;
     font-size: 14px;
@@ -127,41 +127,44 @@ nav .custom-button {
     padding: 15px 20px;
     border: none;
     border-radius: 0.5rem;
-    margin-left: auto;
+    margin-left: 280px;
 }
 
-/* third part */
-header .home-container {
+/* blue intro header */
+header .home {
     background-color: var(--color-blue);
     color: #ffffff;
 }
 
-header .home {
-    justify-content: space-between;
+header div article div.blueintro {
+    max-width: 520px;
+
+    color: white;
 }
 
-article .home-article {
-    max-width: 30rem;
+header div article div.imgLaptop {
+    position: relative;
+    bottom: -4.8px;
+
+    z-index: 1;
 }
 
-article .home-article p {
-    color: #ffffff;
+header div article div .peopleLaptop {
+    max-height: 470.25px;
 }
 
-article .home-picture {
-    max-height: 25rem;
-}
-
-div article div.container-image {
-    width: 230px;
+header div article div.imgLetter {
     position: absolute;
-    right: 0;
-    top: 17rem;
+    width: 241px;
     overflow: hidden;
+    z-index: 0;
+
+    right: 0;
+    bottom: 170px;
 }
 
-article div img.home-o {
-    max-height: 30rem;
+header div article div .letterO {
+    max-height: 482px;
 }
 
 /* Main */
